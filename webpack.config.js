@@ -5,7 +5,6 @@ function getEntry(sources) {
 	if(process.env.NODE_ENV !== 'production') {
 		sources.push('webpack-dev-server/client?http://0.0.0.0:8080/');
 	}
-
 	return sources;
 }
 
