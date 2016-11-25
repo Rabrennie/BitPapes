@@ -12,6 +12,5 @@ export default function calculateAddress(originalKey) {
   );
 
   const rip = new RIPEMD160().update(sha256, 'hex').digest('hex');
-
   return base58check(rip, '00');
 }
