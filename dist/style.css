@@ -1,80 +1,65 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f8f9fa;
-  color: #495057;
-}
+  color: #495057; }
 
 .container {
   max-width: 960px;
   margin: 0em auto;
-  padding: 2em;
-}
+  padding: 2em; }
 
 .instructions, .footer {
-  border-top: 2px solid #ccedff;
-}
+  border-top: 2px solid #ccedff; }
 
 h1 {
   color: #1b6ec2;
   font-size: 2.5rem;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 h2 {
   color: #228ae6;
   font-size: 1.5rem;
-  margin-top: 1rem;
-}
+  margin-top: 1rem; }
 
 p, .progress {
   color: #4dadf7;
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-right: 1rem;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .keys {
-  display: flex; /* or inline-flex */
+  display: flex;
+  /* or inline-flex */
   flex-flow: row wrap;
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-between; }
 
-/* Then we define how is distributed the remaining space */
-justify-content: space-between;
-}
-
-.public,.private {
+.public, .private {
   color: #495057;
   width: 450px;
   display: inline-block;
   overflow: hidden;
-  margin-top: 1rem;
-
-  span {
+  margin-top: 1rem; }
+  .public span, .private span {
     font-size: 1.1rem;
-    color: #4dadf7;
-  }
-
-  .key, .address {
+    color: #4dadf7; }
+  .public .key, .public .address, .private .key, .private .address {
     font-size: 0.9rem;
-    margin-top: 1rem;
-  }
-}
+    margin-top: 1rem; }
 
 .public {
-  width: 310px;
-}
+  width: 310px; }
 
 img {
-  width:164px;
+  width: 164px;
   height: 164px;
-  margin-top: 1rem;
-}
+  margin-top: 1rem; }
 
 .footer {
   margin-top: 3rem;
-  padding-top: 2rem;
-
-  a {
+  padding-top: 2rem; }
+  .footer a {
     float: right;
     display: inline-block;
     color: #f8f9fa;
@@ -82,10 +67,7 @@ img {
     padding: 1rem;
     background-color: #228ae6;
     border-radius: 0.2rem;
-    margin: 0 2rem;
-
-  }
-}
+    margin: 0 2rem; }
 
 .keyboard.icon {
   color: #495057;
@@ -95,8 +77,7 @@ img {
   width: 17px;
   height: 11px;
   border-radius: 1px;
-  border: solid 1px currentColor;
-}
+  border: solid 1px currentColor; }
 
 .keyboard.icon:before {
   content: '';
@@ -106,8 +87,7 @@ img {
   width: 1px;
   height: 1px;
   border: 1px solid transparent;
-  box-shadow: -2px 0 0 -1px currentColor,  2px 0 0 -1px currentColor,  0 -2px 0 -1px currentColor,  0 2px 0 -1px currentColor,  -6px 0 0 -1px currentColor,  6px 0 0 -1px currentColor,  -4px -2px 0 -1px currentColor,  -4px 2px 0 -1px currentColor,  4px -2px 0 -1px currentColor,  4px 2px 0 -1px currentColor;
-}
+  box-shadow: -2px 0 0 -1px currentColor,  2px 0 0 -1px currentColor,  0 -2px 0 -1px currentColor,  0 2px 0 -1px currentColor,  -6px 0 0 -1px currentColor,  6px 0 0 -1px currentColor,  -4px -2px 0 -1px currentColor,  -4px 2px 0 -1px currentColor,  4px -2px 0 -1px currentColor,  4px 2px 0 -1px currentColor; }
 
 .keyboard.icon:after {
   content: '';
@@ -116,13 +96,11 @@ img {
   left: 4px;
   width: 9px;
   height: 1px;
-  background-color: currentColor;
-}
+  background-color: currentColor; }
 
 .keyboards {
   display: inline-block;
   top: -0.2rem;
   margin: 0.8rem;
   width: 1.2rem;
-  position: relative;
-}
+  position: relative; }
